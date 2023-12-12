@@ -16,6 +16,7 @@ The period of time was:
 ## Frequencies
 ### Most frequent words
 ### Most frequent people
+
 ## Topic modelling
 Topic modelling has been realised on both the corpus encompassing all the articles and on each terms' corpus. We have chosen to create 15 topics, since it is a number precise enough to have well-defined topics, but small enough to allow analysis.  
 Several topics appeared in all or most of the topic modellings:
