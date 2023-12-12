@@ -5,6 +5,8 @@ By Ján Cipár, Antonia Pup, Rebeca Olmos del Canto and Defne Ulusoy
 Don't touch this part, Rebeca will fill it once everything is done.
 ## Introduction
 This is a project focusing on US-China relations. We chose the NYT because....
+## Literature review
+Insert text here
 ## Methodology and corpus consolidation
 ### Methodological choices
 We chose to divide the data into corpuses because..
@@ -23,7 +25,8 @@ Several topics appeared in all or most of the topic modellings:
 - Iran and nuclear weapons
 - Technology and Huawei   
 
-Some people, as Hillary Clinton and Mike Pompeo, were so mentionned that they could even be categorised as a topic themselves.
+Some people, as Hillary Clinton and Mike Pompeo, were so mentionned that they could even be categorised as a topic themselves.  
+/// I need to add images of topic modeling ///
 
 ## Sentiment distribution
 ## Bibliography
