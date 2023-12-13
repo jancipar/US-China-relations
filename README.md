@@ -43,4 +43,7 @@ Some people, as Hillary Clinton and Mike Pompeo, were so mentionned that they co
 /// I need to add images of topic modeling ///
 
 ## Sentiment distribution
+
+The sentiment analysis shows that 46,26 % of all articles were negative, 10,9% positive and 42,84 % neutral. The predominance of negative articles over the positive ones can be observed over the whole period 2009-2021. However, we can observe a significant increase of negative articles from the year 2016 which coincides with the onset of Trump's presidency. While the proportion of negative articles was around or below 40 % from 2009 to 2015, it was steadily over 40 % from 2016, reaching 66,7 % in 2021. We can also observe a decline in the share of positive and neutral articles. While from 2009 to 2016, the proportion of positive articles was around 12 %, it was mostly below 10 % from 2016. From 2009 to 2016, the share of neutral articles was around 50 %, but there is a stark decline from 2016. The analysis shows that the news coverage was mostly negative, especially since the beginning of Trump's presidency, when relations between the US and China deteriorated significantly.
+
 ## Bibliography
