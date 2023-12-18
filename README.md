@@ -46,7 +46,12 @@ We can see two key persons who significantly influenced US-China relations even 
 The data also reveals which countries play a major role in the US-China relations. It is North Korea, India, Japan, Venezuela, Russia (in later years) and Philippines. Their leaders regularly occur among the 5 most mentioned people by year in the corpus.
 
 ## Topic modelling
-Topic modelling has been realised on both the corpus encompassing all the articles and on each terms' corpus. We have chosen to create 15 topics, since it is a number precise enough to have well-defined topics, but small enough to allow analysis.  
+Topic modelling has been realised on both the corpus encompassing all the articles and on each terms' corpus. We have chosen to create 15 topics, since it is a number precise enough to have well-defined topics, but small enough to allow analysis. 
+
+> [Lists will all the assigned topics for the three corpuses are available in the document _Topic modelling.pdf_](https://github.com/jancipar/US-China-relations/blob/main/Topic%20modelling.pdf "Topic modelling.pdf")
+
+ See the document Topic_modelling.pdf to 
+
 Several topics appeared in all or most of the topic modellings:
 - Russia-related security issues
 - Finance and economy, mainly USA's
