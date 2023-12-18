@@ -1,5 +1,5 @@
 # Language of strategic competition: The U.S.A.-China dynamics reflected in the New York Times from 2009 to 2020
-A research project for Social Media Analysis  
+A research project for _Social Media Analysis_
 By Ján Cipár, Antonia Pup, Rebeca Olmos del Canto and Defne Ulusoy
 ## Table of contents
 Don't touch this part, Rebeca will fill it once everything is done.
