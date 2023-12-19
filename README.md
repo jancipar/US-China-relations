@@ -27,12 +27,11 @@ However, a palpable shift in diplomatic dynamics occurred with the transition to
 To ensure a comprehensive and accurate representation across each year, we meticulously designed our methodology. Our primary objective was to maintain consistency and equal distribution of articles throughout our selected timeframe. To achieve this, we carefully selected 500 articles for each year, spanning from the inauguration of President Obama on January 20, 2009, to the inauguration of President Biden on January 20, 2021. This approach not only ensures accuracy but also provides a balanced dataset, aiming for an unbiased analysis.
 
 ### Search query 
+    print(number_of_articles(api_key=my_api_key, keyword='U.S.-China relation'))
 
-Our search query, "U.S.-China relations," was deliberately chosen for several reasons. The New York Times predominantly uses "U.S." to refer to the United States, and given its status as an American newspaper, the term "U.S.-China" specifically denotes bilateral relations between the US and China, always prioritizing the US in its representation. To eliminate articles discussing the US or China in isolation, we intentionally omitted single words such as "US," "China," "Washington," "Beijing", “Obama”, “Biden”, “Jinping” or “Jintao” from our search parameters.
+Our __search query, "U.S.-China relation"__ was deliberately chosen for several reasons. The New York Times predominantly uses "U.S." to refer to the United States, and given its status as an American newspaper, the term "U.S.-China" specifically denotes bilateral relations between the US and China, always prioritizing the US in its representation. To eliminate articles discussing the US or China in isolation, we intentionally omitted single words such as "US," "China," "Washington," "Beijing", “Obama”, “Biden”, “Jinping” or “Jintao” from our search parameters.
 
-Following the retrieval of articles, we first compiled them into one consolidated file. 
-
-Additionally, we structured three distinct corpora, arranged in the chronological order to facilitate a nuanced analysis:
+Following the retrieval of articles, we first compiled them into one consolidated file. Additionally, we structured __three distinct corpora__, arranged in the chronological order to facilitate a nuanced analysis:
 1. Obama First Term (2009-2013)
 2. Obama Second Term (2013-2017)
 3. Trump Term (2017-2021)
@@ -63,15 +62,16 @@ To achieve our research objectives, we meticulously scrutinized four key compone
 
 However, it is essential to acknowledge certain limitations inherent in our approach for a holistic interpretation of the findings. Notably, the following considerations underscore the potential constraints of our project:
 
-__Media Source Bias__: Relying solely on articles from The New York Times introduces a potential selection bias, limiting the diversity of perspectives from different media sources. This bias may impact the overall representativeness of our analysis, and findings should be interpreted with this limitation in mind.
+- __Media Source Bias__: Relying solely on articles from The New York Times introduces a potential selection bias, limiting the diversity of perspectives from different media sources. This bias may impact the overall representativeness of our analysis, and findings should be interpreted with this limitation in mind.
 
-__Search Query Specificity__: The use of the search query _"U.S.-China relations"_ might overlook relevant articles using different terminology, potentially excluding nuanced discussions on the topic. This specificity could lead to gaps in our dataset, impacting the comprehensiveness of our study.
+- __Search Query Specificity__: The use of the search query _"U.S.-China relations"_ might overlook relevant articles using different terminology, potentially excluding nuanced discussions on the topic. This specificity could lead to gaps in our dataset, impacting the comprehensiveness of our study.
 
-__Temporal and Spatial Constraints__: The selected timeframe (2009-2021) may not capture long-term trends, and events outside this period could influence U.S.-China relations, limiting the project's comprehensive scope. Recognizing this temporal constraint is vital for understanding the context and potential evolution beyond our specified timeframe.
+- __Temporal and Spatial Constraints__: The selected timeframe (2009-2021) may not capture long-term trends, and events outside this period could influence U.S.-China relations, limiting the project's comprehensive scope. Recognizing this temporal constraint is vital for understanding the context and potential evolution beyond our specified timeframe.
 
-__Empty Column Elimination__: Removing columns with empty values in corpora might result in data gaps, potentially impacting the reliability of topic modeling and sentiment analysis. The necessity of this step should be considered when interpreting the outcomes of our analytical methods.
+- __Empty Column Elimination__: Removing columns with empty values in corpora might result in data gaps, potentially impacting the reliability of topic modeling and sentiment analysis. The necessity of this step should be considered when interpreting the outcomes of our analytical methods.
 
-__Sole Focus on Media Representation__: The project's primary focus on media portrayal might not provide a complete understanding of broader factors influencing U.S.-China relations, such as political, economic, and cultural dynamics. This singular focus may limit the study's depth, and users should exercise caution when extrapolating findings to comprehend the entirety of the complex U.S.-China relations landscape.
+- __Sole Focus on Media Representation__: The project's primary focus on media portrayal might not provide a complete understanding of broader factors influencing U.S.-China relations, such as political, economic, and cultural dynamics. This singular focus may limit the study's depth, and users should exercise caution when extrapolating findings to comprehend the entirety of the complex U.S.-China relations landscape.
+
 
 Within the context of our research, it is essential to illuminate the contours of our study, taking into consideration various factors that both define and limit the scope of our findings.
 
@@ -80,6 +80,7 @@ Firstly, our attempt to retrieve 500 articles per year reveals an irregularity i
 Secondly, our decision to exclusively rely on articles from The New York Times (NYT) introduces a potential bias, given the NYT's distinct political stance. This singular journalistic perspective may not fully encapsulate the broader spectrum of the American media landscape. However, it's crucial to acknowledge that the NYT is a widely read and influential newspaper in the U.S. Thus, our study, while reflective of a specific viewpoint, offers a representative glimpse into the broader U.S. media landscape.
 
 Finally, our technical limitations must be recognized. We openly acknowledge the existence of these constraints, leading us to forgo corrective measures. Nevertheless, we believe that transparency in acknowledging these limitations contributes to the integrity of our research, allowing readers to interpret our findings with an informed perspective.
+
 
 Our study, while not immune to constraints, benefits from the comprehensive nature of our temporal analysis and the significance of the selected media source. Readers are encouraged to approach the results with an awareness of these limitations, understanding that they represent inherent challenges within the scope of the research.
 
@@ -100,22 +101,47 @@ We can see two key persons who significantly influenced US-China relations even 
 
 The data also reveals which countries play a major role in the US-China relations. It is North Korea, India, Japan, Venezuela, Russia (in later years) and Philippines. Their leaders regularly occur among the 5 most mentioned people by year in the corpus.
 
-## Topic modelling
-Topic modelling has been realised on both the corpus encompassing all the articles and on each terms' corpus. We have chosen to create 15 topics, since it is a number precise enough to have well-defined topics, but small enough to allow analysis. 
+## Topic modeling
+    lda_model = LdaModel(corpus=corpus,
+                       id2word=id2word,
+                       num_topics=15,
+                       passes=20,
+                       chunksize=2000)
+    from gensim.models.coherencemodel import CoherenceModel
+    cm = CoherenceModel(model=lda_model, corpus=corpus, coherence='u_mass')
+    cm.get_coherence()
 
-> [The lists will all the assigned topics for the three corpuses are available in the document _Topic modelling.pdf_](https://github.com/jancipar/US-China-relations/blob/main/Topic%20modelling.pdf "Topic modelling.pdf")
+Topic modeling has been realised on both the corpus encompassing all the articles and on each terms' corpus. We have chosen to __create 15 topics__, since it is a number precise enough to have well-defined topics, but small enough to allow analysis. 
 
- See the document Topic_modelling.pdf to 
+> [The lists will all the assigned topics for the three corpuses are available in the document _Topic modeling - tables with identified topics.pdf_](https://github.com/jancipar/US-China-relations/blob/main/Topic%20modelling.pdf "Topic modeling - tables with identified topics.pdf")
+
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_all_corpus.jpg)
+_Figure: created by us. Topic modelling applied to all articles from 2009 to 2021._
+
 
 Several topics appeared in all or most of the topic modellings:
 - Russia-related security issues
 - Finance and economy, mainly USA's
 - Climate change
 - Iran and nuclear weapons
-- Technology and Huawei   
+- Technology and Huawei
+While we cannot exactly see a swift between security to finance topic in between terms, we can see that these two are _the_ main topics of dicussion concerning U.S.-China relations. Finally, some people, as Hillary Clinton and Mike Pompeo, were so mentionned that they could even be categorised as a topic themselves.
 
-Some people, as Hillary Clinton and Mike Pompeo, were so mentionned that they could even be categorised as a topic themselves.  
-/// I need to add images of topic modeling ///
+### Analysis of topic modeling by term
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_1_corpus.jpg)
+_Figure: created by us. Topic modelling applied to Obama's first term from 2009 to 2013._
+
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_2_corpus.jpg)
+_Figure: created by us. Topic modelling applied to Obama's second term from 2013 to 2017._
+
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Trump_corpus.jpg)
+_Figure: created by us. Topic modelling applied to Trump's term from 2017 to 2021._
+
+### Limitations
+    docs = [[token for token in doc if len(token) > 2] for doc in docs]
+
+Despite getting rid of words with 2 characters (see code above), there are still words as 'the', 'our' or 'she'. Hence the existance of topics who do not contribute to the analysis, as topic 15 (14 in the graph) of the overall topic modeling, or topic of X. With more knowledge in coding, some composed words should have remained as a single token, to facilitate the analysis: instead of the code understanding 'White' and 'House' as two separate tokens, and the same goes for people's names.
+
 
 ## Sentiment distribution
 The sentiment analysis has been done using Bert. Its interest for this analysis is on the fact that it shows the positive, negative or neutral connotations attached to the U.S.A-China relations by article. As such, it might help in the understanding of general trends and evolutions through the different presidential terms.
