@@ -13,6 +13,7 @@ The New York Times newspaper has been chosen considering its accessibility, but 
 In our research, our goal is to provide valuable insights into the reciprocal relationship between media portrayals, particularly from influential sources such as The New York Times, and the dynamic nature of China-U.S. relations. By acknowledging the substantial influence of the newspaper, both within the U.S.A. and globally, we seek to illuminate its role in shaping public opinion and reflecting prevailing sentiments within society.  
 
 In addition, our aim is to capture the diverse narratives and perspectives that have molded our understanding of this pivotal geopolitical relationship over time. Through this exploration, we strive to contribute insights into how media portrayals, especially from influential sources like The New York Times, have not only mirrored but also influenced the evolving nature of China-U.S.A. relations. This endeavor offers a valuable lens through which to comprehend the intricate complexities of this vital global partnership. Our approach remains thoughtful and inclusive as we navigate the complexities of this global partnership, recognizing the multifaceted nature of media influence. Through this exploration, we aim to provide a thorough and valuable perspective on the evolving narratives surrounding China-U.S. relations, adding depth and context to our research endeavor.
+
 ## Literature review
 The great power competition between the US and China is without a doubt one of the most pressing issues of governance today. Even before the 2000s, the economic relations between the two actors have been described as "troubled" (Noland, 1996), and their dynamics was already pivoting as the most complex challenge of the 21st century. Today, in this strategic conversation, the future of liberal internationalism (De Graaff and Van Apeldoorn, 2018) as we know it it's at stake, and the world dynamics are already massively influenced by the emergence of China as a global power and the way US is reacting to this challenge.  
 
@@ -21,13 +22,67 @@ In the aftermath of Barack Obama's inauguration on January 20, 2009, the initial
 The academic debate has often associated this conundum by distinguishing between a power transition and a hegemonic succession, especially since China is considered to be the most persistent challenge at US' hegemony since the end of the Cold War and the fall of the Soviet Union (Clark, 2011). The "strategic distrust" (Lieberthal and Jisi, 2012) between the two economic challengers appeared in the American national security debate environment long before we have seen actual de-risking direct measures that lead the bilateral relation. For the policy makers in the United States, the growing military investment, the strategic ambiguity in the Asia-Pacific, coupled with lack of transparency and willingness to signal clear foreign policy interests was particular worrisome. Furthermore, the fact that although Chinese economy growth was stellar (about the same time when US experienced significant difficulties to cope after the international financial crisis in 2008), the lack of prospectives for political reform was more difficult to grasp.  
 
 However, a palpable shift in diplomatic dynamics occurred with the transition to the Trump administration. In 2017, the promotion of a new national security strategy brought important amendments to the bilateral vocabulary with China being labeled as a “revisionist power” (Zhao, 2019), and US ready to enter a novel era of strategic competition. The advent of the Trade War and the multifaceted challenges posed by the COVID-19 pandemic introduced a discernible transformation in how China was depicted in the media. This period marked an evolution in U.S.-China relations, portraying a landscape that was not only complex but at times contentious under President Trump's leadership. 2018 was a particular important moment in the relation of the these two world largest economic powers (Itakura, 2020), notably due to the fact that they have imposed harsh import tariffs against the other, which lead to the reduce of a variety of sectoral imports to the US and China. Trade conflicts between US and China had a growing impact on most countries, especially in GDP and manufacturing employment, albeit it benefited their welfare and trade (Li, He and Lin, 2018). This trade war was not limited to import tariffs or economic relations in general, but involved new limits on high-tech products, political competition and a diplomatic polarization with worldwide effects. The protectionist trade approach of the US under Trump presidency has been cited as the "policy of national egoism within the framework of the economic patriotism" (Kapustina et al., 2020), in which the sole economic interests of the American nation Donald Trump aimed to restored were a more important priority than the interests of the partners and the obligations derived from multilateralism. Following the conclusion of Trump's presidency, Joe Biden assumed office with a diplomatic approach that aimed to soften relations with China. 
+
 ## Methodology and corpus consolidation
-Our investigation spans covers the Obama administration since 2009 and the two following Trump administrations, with the goal of understanding the trends in which the US-China relations are portrayed. The timeliness of this research is bolstered by the fact that it follows a US-China summit, considered to be one of the most important political events of the calendar year, and it precedes the electoral year in the US.   
-### Methodological choices
-We chose to divide the data into corpuses because..
-### Corpus consolidation
-The keywords were: 
-The period of time was:
+To ensure a comprehensive and accurate representation across each year, we meticulously designed our methodology. Our primary objective was to maintain consistency and equal distribution of articles throughout our selected timeframe. To achieve this, we carefully selected 500 articles for each year, spanning from the inauguration of President Obama on January 20, 2009, to the inauguration of President Biden on January 20, 2021. This approach not only ensures accuracy but also provides a balanced dataset, aiming for an unbiased analysis.
+
+### Search query 
+
+Our search query, "U.S.-China relations," was deliberately chosen for several reasons. The New York Times predominantly uses "U.S." to refer to the United States, and given its status as an American newspaper, the term "U.S.-China" specifically denotes bilateral relations between the US and China, always prioritizing the US in its representation. To eliminate articles discussing the US or China in isolation, we intentionally omitted single words such as "US," "China," "Washington," "Beijing", “Obama”, “Biden”, “Jinping” or “Jintao” from our search parameters.
+
+Following the retrieval of articles, we first compiled them into one consolidated file. 
+
+Additionally, we structured three distinct corpora, arranged in the chronological order to facilitate a nuanced analysis:
+1. Obama First Term (2009-2013)
+2. Obama Second Term (2013-2017)
+3. Trump Term (2017-2021)
+
+This segmentation proved crucial as our project revolves around the media portrayal of the U.S.-China relations. By examining variations between Obama's two terms and contrasting the approaches of a Democrat (Obama) and a Republican (Trump), we aimed to discern the impact of changing political landscapes on media depictions. Furthermore, we sought to investigate whether Obama's policy towards China remained consistent throughout his two terms and explore the divergences in approach between a Democrat and a Republican towards China.
+
+During our analysis, we encountered columns in our corpora lacking values, prompting the removal of empty columns. While this step resulted in inconsistencies in the article count across different sections, it was essential for a robust application of topic modeling and sentiment analysis.
+
+Our overarching goals encompass two primary objectives:
+- Trace the Evolution of U.S.-China Relations Representation within The New York Times
+- Examine Discrepancies Between Media Portrayal and Actual Political Discourse
+    - Is media discourse more critical than political discourse?
+    - Does media coverage extend beyond political aspects to encompass other dimensions?
+    - Does the media predominantly portray China negatively, or are there critiques of the US government as well?
+
+### 4 Key components of the three corpora
+To achieve our research objectives, we meticulously scrutinized four key components within each of the three corpora:
+
+1. __Identification of Prominent Figures in Headlines and Lead Paragraphs__: We systematically identified and analyzed individuals mentioned in both headlines and lead paragraphs to gain insights into the key figures driving media narratives.
+
+2. __Topic Modeling for Discerning Dominant Themes Across Time__: Employing advanced topic modeling techniques, we delved into the datasets to uncover prevalent themes evolving over the specified timeline. This facilitated a nuanced understanding of the dynamic shifts in media coverage.
+
+3. __Sentiment Analysis to Assess Media Favorability Toward China in Relation to Diplomatic Developments__: Through sentiment analysis, we gauged the tone and favorability of media coverage concerning U.S.-China relations, aligning our assessment with the corresponding diplomatic events to capture the broader context.
+
+4. __Frequency Analysis of "Trade" and "Security" Over Time__: We systematically tracked the frequency of specific terms, such as "Trade" and "Security," throughout the selected timeframe. This enabled us to quantify and assess the degree of emphasis on these critical aspects and their role in shaping the media's representation of the ongoing rivalry between the two nations.
+
+### Limitations
+
+However, it is essential to acknowledge certain limitations inherent in our approach for a holistic interpretation of the findings. Notably, the following considerations underscore the potential constraints of our project:
+
+__Media Source Bias__: Relying solely on articles from The New York Times introduces a potential selection bias, limiting the diversity of perspectives from different media sources. This bias may impact the overall representativeness of our analysis, and findings should be interpreted with this limitation in mind.
+
+__Search Query Specificity__: The use of the search query _"U.S.-China relations"_ might overlook relevant articles using different terminology, potentially excluding nuanced discussions on the topic. This specificity could lead to gaps in our dataset, impacting the comprehensiveness of our study.
+
+__Temporal and Spatial Constraints__: The selected timeframe (2009-2021) may not capture long-term trends, and events outside this period could influence U.S.-China relations, limiting the project's comprehensive scope. Recognizing this temporal constraint is vital for understanding the context and potential evolution beyond our specified timeframe.
+
+__Empty Column Elimination__: Removing columns with empty values in corpora might result in data gaps, potentially impacting the reliability of topic modeling and sentiment analysis. The necessity of this step should be considered when interpreting the outcomes of our analytical methods.
+
+__Sole Focus on Media Representation__: The project's primary focus on media portrayal might not provide a complete understanding of broader factors influencing U.S.-China relations, such as political, economic, and cultural dynamics. This singular focus may limit the study's depth, and users should exercise caution when extrapolating findings to comprehend the entirety of the complex U.S.-China relations landscape.
+
+Within the context of our research, it is essential to illuminate the contours of our study, taking into consideration various factors that both define and limit the scope of our findings.
+
+Firstly, our attempt to retrieve 500 articles per year reveals an irregularity in the distribution of actual articles. This discrepancy can be attributed to two key factors: the study's encompassing two years, from January 20, 2009, to January 20, 2010, which introduces potential disparities, and the necessity to delete columns devoid of values, leading to an uneven distribution of articles. This unevenness poses a challenge to the precision of our study, particularly in evaluating the evolution of the U.S.-China narrative. Despite this limitation, we maintain confidence in the robustness of our overall findings due to the extended timeframe of our analysis.
+
+Secondly, our decision to exclusively rely on articles from The New York Times (NYT) introduces a potential bias, given the NYT's distinct political stance. This singular journalistic perspective may not fully encapsulate the broader spectrum of the American media landscape. However, it's crucial to acknowledge that the NYT is a widely read and influential newspaper in the U.S. Thus, our study, while reflective of a specific viewpoint, offers a representative glimpse into the broader U.S. media landscape.
+
+Finally, our technical limitations must be recognized. We openly acknowledge the existence of these constraints, leading us to forgo corrective measures. Nevertheless, we believe that transparency in acknowledging these limitations contributes to the integrity of our research, allowing readers to interpret our findings with an informed perspective.
+
+Our study, while not immune to constraints, benefits from the comprehensive nature of our temporal analysis and the significance of the selected media source. Readers are encouraged to approach the results with an awareness of these limitations, understanding that they represent inherent challenges within the scope of the research.
+
 ## Frequencies
 ### Most frequent words
 ### Most frequent people
