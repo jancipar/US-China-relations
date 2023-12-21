@@ -104,17 +104,20 @@ Our study, while not immune to constraints, benefits from the comprehensive natu
 ## Frequencies
 ### Most frequent words
 ### Most frequent people
-In this analysis, we turn our attention to the five most frequently mentioned individuals by year in a corpus of news articles from 2009 to 2020. Leveraging Named Entity Recognition (NER) techniques, we identify and quantify the occurrences of these prominent figures, shedding light on the dynamics of media attention. The outcomes of our analysis offer a mix of anticipated findings and unexpected discoveries. 
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_frequency_people.jpg)
+_Figure 1: created by us. Most frequently mentionned 5 people per year from 2009 to 2021._  
 
-The analysis shows that the most mentioned persons are the US presidents Barack Obama and Donald Trump. This expected high frequency of their occurrence in the articles aligns with their pivotal roles in shaping global affairs and commanding considerable public attention. However, the name “Donald Trump” is mentioned much more times than the name “Barack Obama” which may have been caused by the global situation. While the US-China relations during the Obama presidency were mostly cooperative and peaceful, their relations significantly worsened during the Trump presidency. During Trump's presidency, we can observe the onset of the great power competition and US-China relations became a higher-priority topic for the media.
+In this analysis, we turn our attention to the __five most frequently mentioned individuals by year__ in a corpus of news articles from 2009 to 2021. Leveraging __Named Entity Recognition (NER) techniques__, we identify and quantify the occurrences of these prominent figures, shedding light on the dynamics of media attention. The outcomes of our analysis offer a mix of anticipated findings and unexpected discoveries. 
 
-Their respective US Secretaries of State, Hillary Clinton and Rex Tillerson, also have generally high occurrences in the articles which underscores the critical role that key officials play in shaping and influencing US-China relations. This consistent high profile of Secretaries of State as well as other key officials such as former US Secretary of Defense Robert Gates in the articles signifies their integral contribution to diplomatic endeavors and their high impact on the discourse surrounding the U.S.-China relations. 
+The analysis shows that __the most mentioned people are the U.S. presidents Barack Obama and Donald Trump__. This expected high frequency of their occurrence in the articles aligns with their pivotal roles in shaping global affairs and commanding considerable public attention. However, the name “Donald Trump” is mentioned much more times than the name “Barack Obama” which may have been caused by the global situation. While the U.S.-China relations during the Obama presidency were mostly cooperative and peaceful, their relations significantly worsened during the Trump presidency. During Trump's presidency, we can observe the onset of the great power competition and U.S.-China relations became a higher-priority topic for the media.
+
+Their respective U.S. Secretaries of State, Hillary Clinton and Rex Tillerson, also have generally high occurrences in the articles which underscores the critical role that key officials play in shaping and influencing US-China relations. This consistent high profile of Secretaries of State as well as other key officials such as former US Secretary of Defense Robert Gates in the articles signifies their integral contribution to diplomatic endeavors and their high impact on the discourse surrounding the U.S.-China relations. 
 
 Chinese president Xi Jinping is mentioned primarily from the year 2013, when he became president of the People's Republic of China. However, his name is mentioned much less than the names of the US presidents which might have been caused by the bias of the New York Times as the american newspaper. 
 
-However, as the data reveals, key Chinese and US political figures are not the only drivers of US-China relations. We can observe several actors from third countries and non-official actors as well. In 2009, one of the most mentioned names was former US president Richard Nixon. This is connected to the effort of the then US president Barack Obama, who endeavored to strengthen relations with China—a diplomatic initiative reminiscent of the endeavors undertaken by Richard Nixon in the 1970s. The media compared Obama's efforts to Nixon's.
+However, as the data reveals, key Chinese and US political figures are not the only drivers of US-China relations. We can observe several actors from third countries and non-official actors as well. In 2009, one of the most mentioned names was former US president Richard Nixon. This is connected to the effort of the then US president Barack Obama, who endeavored to strengthen relations with China: a diplomatic initiative reminiscent of the endeavors undertaken by Richard Nixon in the 1970s. The media compared Obama's efforts to Nixon's.
 
-We can see two key persons who significantly influenced US-China relations even though they had no political role. One of them is Chen Guangcheng, a civil rights activist persecuted in China, who fled to the US embassy in Beijing. He was a subject of several negotiations between the US and China. The other is Edward Snowden, an American whistleblower, who leaked highly classified information. He fled to Hong Kong where he spent several weeks following his actions.
+We can see two key people who significantly influenced U.S.-China relations even though they had no political role. One of them is Chen Guangcheng, a civil rights activist persecuted in China, who fled to the US embassy in Beijing. He was a subject of several negotiations between the US and China. The other is Edward Snowden, an American whistleblower, who leaked highly classified information. He fled to Hong Kong where he spent several weeks following his actions.
 
 The data also reveals which countries play a major role in the US-China relations. It is North Korea, India, Japan, Venezuela, Russia (in later years) and Philippines. Their leaders regularly occur among the 5 most mentioned people by year in the corpus.
 
@@ -136,7 +139,7 @@ Topic modeling has been realised on both the corpus encompassing all the article
 _Figure: created by us. Topic modelling applied to all articles from 2009 to 2021._
 
 
-Several topics appeared in all or most of the topic modellings:
+__Several key topics__ appeared in all or most of the topic modellings:
 - Russia-related security issues
 - Finance and economy, mainly USA's
 - Climate change
@@ -148,22 +151,22 @@ While we cannot exactly see a swift between security to finance topic in between
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_1.jpg)
 _Figure: created by us. Topic modelling applied to Obama's first term from 2009 to 2013._
 
-In this first figure, representing the 15 main topic's of Obama's first term (2009-2013), we see that there is almost an overalapping between topic related with international relations and politics (numbers 1, 3, 12 and 14 of the graphic). Climate change (number 15) is perhaps the most encompassing topic after U.S.'s economy (number 12). A curious topic, for it is well define and separate from others is that of Iran and nuclear weapons (number 9).
+In this first figure, representing the 15 main topic's of __*Obama's first term (2009-2013)*__, we see that there is almost an overalapping between topic related with international relations and politics (numbers 1, 3, 12 and 14 of the graphic). Climate change (number 15) is perhaps the most encompassing topic after U.S.'s economy (number 12). A curious topic, for it is well define and separate from others is that of Iran and nuclear weapons (number 9).
 
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_2.jpg)
 _Figure: created by us. Topic modelling applied to Obama's second term from 2013 to 2017._
 
-In this figure representing Obama's second term (2013-2017), we see many overlappings at the bottom, with little apparent thematic coherency. Climate change (number 8), besides being more closely related to China, is also quite broad. Perhaps the most interesting topics are those of Russia-related security issues (numbers 5 and 14), since they appear to be linked with Taiwan. We also see the appearence of the first topic exclusively related to finance (number 13).
+In this figure representing __*Obama's second term (2013-2017)*__, we see many overlappings at the bottom, with little apparent thematic coherency. Climate change (number 8), besides being more closely related to China, is also quite broad. Perhaps the most interesting topics are those of Russia-related security issues (numbers 5 and 14), since they appear to be linked with Taiwan. We also see the appearence of the first topic exclusively related to finance (number 13).
 
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Trump.jpg)
 _Figure: created by us. Topic modelling applied to Trump's term from 2017 to 2021._
 
-Finally, Trump's term (2017-2021) is difficult to read, for number 3 greatly disrupts its configuration. This topic seems to be a mix of click-bait articles and White House day-to-day procedures. Climate change's extension (number 10) has been reduced, to the advantage of topic focussing more on domestic matters (number 6 on White House's security policies and number 14 on Biden and the election): this shift perhaps shows an increased importance given to domestic matters by the New York Times, or also a further consideraton of China within U.S.'s politics. Iran and nuclear weapons (number 5) is also present, as well as finance (number 7) and even a distinct topic on North Korea (number 12).
+Finally, __*Trump's term (2017-2021)*__ is difficult to read, for number 3 greatly disrupts its configuration. This topic seems to be a mix of click-bait articles and White House day-to-day procedures. Climate change's extension (number 10) has been reduced, to the advantage of topic focussing more on domestic matters (number 6 on White House's security policies and number 14 on Biden and the election): this shift perhaps shows an increased importance given to domestic matters by the New York Times, or also a further consideraton of China within U.S.'s politics. Iran and nuclear weapons (number 5) is also present, as well as finance (number 7) and even a distinct topic on North Korea (number 12).
 
 ### Limitations
     docs = [[token for token in doc if len(token) > 2] for doc in docs]
 
-Despite getting rid of words with 2 characters (see code above), there are still words as 'the', 'our' or 'she'. Hence the existance of topics who do not contribute to the analysis, as topic 15 (14 in the graph) of the overall topic modeling, or topic of X. With more knowledge in coding, some composed words should have remained as a single token, to facilitate the analysis: instead of the code understanding 'White' and 'House' as two separate tokens, and the same goes for people's names.
+Despite getting rid of words with 2 characters, there are still words as 'the', 'our' or 'she'. Hence the existance of topics who do not contribute to the analysis, as topic 15 (14 in the graph) of the overall topic modeling, or topic of X. With more knowledge in coding, some __composed words should have remained as a single token__, to facilitate the analysis: instead of the code understanding 'White' and 'House' as two separate tokens, and the same goes for people's names.
 
 
 ## Sentiment distribution
@@ -171,7 +174,7 @@ Despite getting rid of words with 2 characters (see code above), there are still
     tokenizer = BertTokenizer.from_pretrained(model_name)
     model = BertForSequenceClassification.from_pretrained(model_name)
 
-The sentiment analysis has been done using Bert. Its interest for this analysis is on the fact that it shows the positive, negative or neutral connotations attached to the U.S.A-China relations by article. As such, it might help in the understanding of general trends and evolutions through the different presidential terms.
+The sentiment analysis has been done using Bert. Its interest for this analysis is on the fact that it shows the positive, negative or neutral connotations attached to the U.S.-China relations by article. As such, it might help in the understanding of general trends and evolutions through the different presidential terms.
 
 > [The code used to do the sentiment analysis can be found in the document _Sentiment analysis_Bert.ipynb_](https://github.com/jancipar/US-China-relations/blob/main/Sentiment_analysis_Bert.ipynb "Sentiment_analysis_Bert.ipynb")
 
@@ -184,7 +187,8 @@ The sentiment analysis has been done using Bert. Its interest for this analysis 
     plt.title('Sentiment Analysis of Articles')
     plt.show()
 
-The first sentiment analysis realised covers the entirety of the corpus, from 2009 to 2020 (see Figure below). It shows that 46,26 % of all articles were negative, 10,9% positive and 42,84 % neutral. These results came as unsuprising to us: during the covered period, both the tense U.S.A.-China relation and China's politics have not been presented under a flattening light to the U.S.A public. The high percentage of neutral articles may depict the technical character of their relations on some subjects, but also The New York Times' unsensational approach to most topics.
+The first sentiment analysis realised covers the entirety of the corpus, from 2009 to 2020 (see Figure below). It shows that __46,26 % of all articles were negative, 10,9% positive and 42,84 % neutral__. These results came as unsuprising to us: during the covered period, both the tense U.S.-China relation and China's politics have not been presented under a flattening light to the U.S. public. The high percentage of neutral articles may depict the technical character of their relations on some subjects, but also The New York Times' unsensational approach to most topics.
+
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_sentiment_analysis_1.jpg)
 _Figure: created by us. Overall sentiment analysis from 2009 to 2020._
 
@@ -195,7 +199,8 @@ _Figure: created by us. Overall sentiment analysis from 2009 to 2020._
     plt.title('Sentiment Analysis by Year')
     plt.legend(title='Sentiment', bbox_to_anchor=(1, 1), loc='upper left')
 
-In accordance with the first sentiment analysis, the second and more detailed one shows that the predominance of negative articles over the positive ones can be observed over the whole period 2009-2021. However, we can observe a significant increase of negative articles from the year 2016 which coincides with the onset of Trump's presidency. While the proportion of negative articles was around or below 40 % from 2009 to 2015, it was steadily over 40 % from 2016, reaching 66,7 % in 2021. We can also observe a decline in the share of positive and neutral articles. While from 2009 to 2016 the proportion of positive articles was around 12 %, it was mostly below 10 % from 2016. From 2009 to 2016, the share of neutral articles was around 50 %, but there is a stark decline from 2016. The analysis shows that the news coverage was mostly negative, especially since the beginning of Trump's presidency, when relations between the US and China deteriorated significantly.
+In accordance with the first sentiment analysis, the second and more detailed one shows that the predominance of negative articles over the positive ones can be observed over the whole period 2009-2021. However, we can observe a __significant increase of negative articles from the year 2016__ which coincides with the onset of Trump's presidency. While the proportion of negative articles was around or below 40 % from 2009 to 2015, it was steadily over 40 % from 2016, reaching 66,7 % in 2021. We can also observe a decline in the share of positive and neutral articles. While from 2009 to 2016 the proportion of positive articles was around 12 %, it was mostly below 10 % from 2016. From 2009 to 2016, the share of neutral articles was around 50 %, but there is a stark decline from 2016. The analysis shows that the news coverage was mostly negative, especially since the beginning of Trump's presidency, when relations between the US and China deteriorated significantly.
+
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_sentiment_analysis_2.jpg)
 _Figure: created by us. Sentiment analysis by year from 2009 to 2020._   
  
