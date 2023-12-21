@@ -105,6 +105,19 @@ Our study, while not immune to constraints, benefits from the comprehensive natu
 
 ## Frequencies
 ### Most frequent words
+    adjectives = [token.text for doc in spacydocs for token in doc if token.pos_ == "ADJ" and token.text.lower() not in STOP_WORDS]
+    nouns = [token.text for doc in spacydocs for token in doc if token.pos_ == "NOUN" and token.text.lower() not in STOP_WORDS]
+
+In our analysis, we decided to extract the 10 most frequent adjectives and nouns. We filtered out the common words using spacy library containing common words such as "more" and "other". The two most frequent adjectives are "Chinese" and "American", which is an unsurprising result. We can also find words __"nuclear", "military" and "economic" among the most frequent words__, which suggests that both security and financial aspects play the most crucial role in the U.S.-China relations.   
+
+Suprisingly, the adjective "Korean" is also among the most frequent adjectives which underscores the importance of North and South Korea in US-China relations. This is further proved by the high frequency of Korean leaders´ names in our analysis of the most mentioned people in the articles.
+
+The ten most common nouns include words such as "government", "officials" and "administration". This underscores the __pivotal role of state institutions__ in mutual relations. Even though we found several non-official actors in our NER analysis, both NER analysis and lexical extraction analysis prove the dominance of governments and governmental officials in US-China relations. Words __"trade" and "war" are also among the ten most common nouns__ which is consistent with the main dynamics of US-China relations in the literature.  
+
+> [The code used for this section is available in the document _Lexical extraction.ipynb_]([https://github.com/jancipar/US-China-relations/blob/main/Lexical%20extraction.ipynb] "Lexical extraction.ipynb")
+
+
+
 ### Most frequent people
     def extract_persons(text):
         doc = nlp(text)
