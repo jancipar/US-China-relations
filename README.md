@@ -11,6 +11,9 @@ By Ján Cipár, Antonia Pup, Rebeca Olmos del Canto and Defne Ulusoy
 * [Limitations](https://github.com/jancipar/US-China-relations/blob/main/README.md#limitations)
 
 [Frequencies](https://github.com/jancipar/US-China-relations/blob/main/README.md#frequencies)  
+* [Most frequent words](https://github.com/jancipar/US-China-relations/blob/main/README.md#most-frequent-words)
+* [Most frequent people](https://github.com/jancipar/US-China-relations/blob/main/README.md#most-frequent-people)
+
 [Topic modeling](https://github.com/jancipar/US-China-relations/blob/main/README.md#topic-modeling)   
 * [Analysis of topic modeling by term](https://github.com/jancipar/US-China-relations/blob/main/README.md#analysis-of-topic-modeling-by-term)
 * [Limitations](https://github.com/jancipar/US-China-relations/blob/main/README.md#limitations-1)
