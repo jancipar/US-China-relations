@@ -144,6 +144,9 @@ We can see two key people who significantly influenced U.S.-China relations even
 
 The data also reveals which countries play a major role in the US-China relations. It is North Korea, India, Japan, Venezuela, Russia (in later years) and Philippines. Their leaders regularly occur among the 5 most mentioned people by year in the corpus.
 
+> [The code used for this section is available in the document _5 most frequently mentionned people by year.ipynb_](https://github.com/jancipar/US-China-relations/blob/main/5%20most%20frequently%20mentioned%20people%20by%20year%20(NER).ipynb "5 most frequently mentionned people by year.ipynb")
+
+
 ## Topic modeling
     lda_model = LdaModel(corpus=corpus,
                        id2word=id2word,
