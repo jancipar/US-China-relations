@@ -2,7 +2,23 @@
 A research project for _Social Media Analysis_
 By Ján Cipár, Antonia Pup, Rebeca Olmos del Canto and Defne Ulusoy
 ## Table of contents
-Don't touch this part, Rebeca will fill it once everything is done.
+[Introduction](https://github.com/jancipar/US-China-relations/blob/main/README.md#introduction)   
+[Literature review](https://github.com/jancipar/US-China-relations/blob/main/README.md#literature-review)   
+[Methodology and corpus consolidation](https://github.com/jancipar/US-China-relations/blob/main/README.md#methodology-and-corpus-consolidation)   
+* [Search query](https://github.com/jancipar/US-China-relations/blob/main/README.md#search-query)
+* [4 key components of the three corpora](https://github.com/jancipar/US-China-relations/blob/main/README.md#4-key-components-of-the-three-corpora)
+* [Limitations](https://github.com/jancipar/US-China-relations/blob/main/README.md#limitations)
+
+[Frequencies](https://github.com/jancipar/US-China-relations/blob/main/README.md#frequencies)  
+
+[Topic modeling](https://github.com/jancipar/US-China-relations/blob/main/README.md#topic-modeling)   
+* [Analysis of topic modeling by term](https://github.com/jancipar/US-China-relations/blob/main/README.md#analysis-of-topic-modeling-by-term)
+* [Limitations](https://github.com/jancipar/US-China-relations/blob/main/README.md#limitations-1)
+
+[Sentiment distribution](https://github.com/jancipar/US-China-relations/blob/main/README.md#sentiment-distribution)
+
+[Bibliography](https://github.com/jancipar/US-China-relations/blob/main/README.md#bibliography)  
+
 ## Introduction
 Relations between the United States of America (U.S.A) and People's Republic of China have caught much international attention during the past decade. Due to the increased importance of the latter and the tensions between the two actors, the topic was a top priority in U.S.A's national security conversation. Some of the thought leaders of the Republican party even called the advent of a New Cold war (Carafano, 2023) between the two geopolitical powers of the moment. Considering the political sciences relavance of the subject, our group has chosen to focus on U.S.A-China relations coverage by the New York Times from 2009 to 2020.
 
