@@ -69,7 +69,7 @@ Our overarching goals encompass two primary objectives:
     - Does media coverage extend beyond political aspects to encompass other dimensions?
     - Does the media predominantly portray China negatively, or are there critiques of the US government as well?
 
-### 4 Key components of the three corpora
+### 3 Key components of the three corpora
 To achieve our research objectives, we meticulously scrutinized four key components within each of the three corpora:
 
 1. __Identification of Prominent Figures in Headlines and Lead Paragraphs__: We systematically identified and analyzed individuals mentioned in both headlines and lead paragraphs to gain insights into the key figures driving media narratives.
@@ -77,8 +77,6 @@ To achieve our research objectives, we meticulously scrutinized four key compone
 2. __Topic Modeling for Discerning Dominant Themes Across Time__: Employing advanced topic modeling techniques, we delved into the datasets to uncover prevalent themes evolving over the specified timeline. This facilitated a nuanced understanding of the dynamic shifts in media coverage.
 
 3. __Sentiment Analysis to Assess Media Favorability Toward China in Relation to Diplomatic Developments__: Through sentiment analysis, we gauged the tone and favorability of media coverage concerning U.S.-China relations, aligning our assessment with the corresponding diplomatic events to capture the broader context.
-
-4. __Frequency Analysis of "Trade" and "Security" Over Time__: We systematically tracked the frequency of specific terms, such as "Trade" and "Security," throughout the selected timeframe. This enabled us to quantify and assess the degree of emphasis on these critical aspects and their role in shaping the media's representation of the ongoing rivalry between the two nations.
 
 ### Limitations
 
