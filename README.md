@@ -10,13 +10,11 @@ By Ján Cipár, Antonia Pup, Rebeca Olmos del Canto and Defne Ulusoy
 * [Limitations](https://github.com/jancipar/US-China-relations/blob/main/README.md#limitations)
 
 [Frequencies](https://github.com/jancipar/US-China-relations/blob/main/README.md#frequencies)  
-
 [Topic modeling](https://github.com/jancipar/US-China-relations/blob/main/README.md#topic-modeling)   
 * [Analysis of topic modeling by term](https://github.com/jancipar/US-China-relations/blob/main/README.md#analysis-of-topic-modeling-by-term)
 * [Limitations](https://github.com/jancipar/US-China-relations/blob/main/README.md#limitations-1)
 
 [Sentiment distribution](https://github.com/jancipar/US-China-relations/blob/main/README.md#sentiment-distribution)
-
 [Bibliography](https://github.com/jancipar/US-China-relations/blob/main/README.md#bibliography)  
 
 ## Introduction
