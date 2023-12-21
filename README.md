@@ -16,6 +16,8 @@ By Ján Cipár, Antonia Pup, Rebeca Olmos del Canto and Defne Ulusoy
 * [Limitations](https://github.com/jancipar/US-China-relations/blob/main/README.md#limitations-1)
 
 [Sentiment distribution](https://github.com/jancipar/US-China-relations/blob/main/README.md#sentiment-distribution)
+* [Sentiment analysis on the whole corpus](https://github.com/jancipar/US-China-relations/blob/main/README.md#sentiment-analysis-on-the-whole-corpus)
+* [Sentiment analysis per year](https://github.com/jancipar/US-China-relations/blob/main/README.md#sentiment-analysis-per-year)
 
 [Bibliography](https://github.com/jancipar/US-China-relations/blob/main/README.md#bibliography)  
 
@@ -104,12 +106,17 @@ Our study, while not immune to constraints, benefits from the comprehensive natu
 ## Frequencies
 ### Most frequent words
 ### Most frequent people
-![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_frequency_people.jpg)
-_Figure 1: created by us. Most frequently mentionned 5 people per year from 2009 to 2021._  
+    def extract_persons(text):
+        doc = nlp(text)
+        persons = [ent.text.lower() for ent in doc.ents if ent.label_ == "PERSON"]
+        return persons
 
 In this analysis, we turn our attention to the __five most frequently mentioned individuals by year__ in a corpus of news articles from 2009 to 2021. Leveraging __Named Entity Recognition (NER) techniques__, we identify and quantify the occurrences of these prominent figures, shedding light on the dynamics of media attention. The outcomes of our analysis offer a mix of anticipated findings and unexpected discoveries. 
 
 The analysis shows that __the most mentioned people are the U.S. presidents Barack Obama and Donald Trump__. This expected high frequency of their occurrence in the articles aligns with their pivotal roles in shaping global affairs and commanding considerable public attention. However, the name “Donald Trump” is mentioned much more times than the name “Barack Obama” which may have been caused by the global situation. While the U.S.-China relations during the Obama presidency were mostly cooperative and peaceful, their relations significantly worsened during the Trump presidency. During Trump's presidency, we can observe the onset of the great power competition and U.S.-China relations became a higher-priority topic for the media.
+
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_frequency_people.jpg)
+_Figure 1: created by us. Most frequently mentionned 5 people per year from 2009 to 2021._  
 
 Their respective U.S. Secretaries of State, Hillary Clinton and Rex Tillerson, also have generally high occurrences in the articles which underscores the critical role that key officials play in shaping and influencing US-China relations. This consistent high profile of Secretaries of State as well as other key officials such as former US Secretary of Defense Robert Gates in the articles signifies their integral contribution to diplomatic endeavors and their high impact on the discourse surrounding the U.S.-China relations. 
 
@@ -199,7 +206,7 @@ _Figure: created by us. Overall sentiment analysis from 2009 to 2020._
     plt.title('Sentiment Analysis by Year')
     plt.legend(title='Sentiment', bbox_to_anchor=(1, 1), loc='upper left')
 
-In accordance with the first sentiment analysis, the second and more detailed one shows that the predominance of negative articles over the positive ones can be observed over the whole period 2009-2021. However, we can observe a __significant increase of negative articles from the year 2016__ which coincides with the onset of Trump's presidency. While the proportion of negative articles was around or below 40 % from 2009 to 2015, it was steadily over 40 % from 2016, reaching 66,7 % in 2021. We can also observe a decline in the share of positive and neutral articles. While from 2009 to 2016 the proportion of positive articles was around 12 %, it was mostly below 10 % from 2016. From 2009 to 2016, the share of neutral articles was around 50 %, but there is a stark decline from 2016. The analysis shows that the news coverage was mostly negative, especially since the beginning of Trump's presidency, when relations between the US and China deteriorated significantly.
+In accordance with the first sentiment analysis, the second and more detailed one shows that the predominance of negative articles over the positive ones can be observed over the whole period 2009-2020. However, we can observe a __significant increase of negative articles from the year 2016__ which coincides with the onset of Trump's presidency. While the proportion of negative articles was around or below 40 % from 2009 to 2015, it was steadily over 40 % from 2016, reaching 66,7 % in 2021. We can also observe a decline in the share of positive and neutral articles. While from 2009 to 2016 the proportion of positive articles was around 12 %, it was mostly below 10 % from 2016. From 2009 to 2016, the share of neutral articles was around 50 %, but there is a stark decline from 2016. The analysis shows that the news coverage was mostly negative, especially since the beginning of Trump's presidency, when relations between the US and China deteriorated significantly.
 
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_sentiment_analysis_2.jpg)
 _Figure: created by us. Sentiment analysis by year from 2009 to 2020._   
