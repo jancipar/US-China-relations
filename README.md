@@ -128,13 +128,13 @@ Several topics appeared in all or most of the topic modellings:
 While we cannot exactly see a swift between security to finance topic in between terms, we can see that these two are _the_ main topics of dicussion concerning U.S.-China relations. Finally, some people, as Hillary Clinton and Mike Pompeo, were so mentionned that they could even be categorised as a topic themselves.
 
 ### Analysis of topic modeling by term
-![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_1_corpus.jpg)
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_1.jpg)
 _Figure: created by us. Topic modelling applied to Obama's first term from 2009 to 2013._
 
-![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_2_corpus.jpg)
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_2.jpg)
 _Figure: created by us. Topic modelling applied to Obama's second term from 2013 to 2017._
 
-![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Trump_corpus.jpg)
+![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Trump.jpg)
 _Figure: created by us. Topic modelling applied to Trump's term from 2017 to 2021._
 
 ### Limitations
