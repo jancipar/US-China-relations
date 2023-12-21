@@ -166,6 +166,10 @@ Despite getting rid of words with 2 characters (see code above), there are still
 
 
 ## Sentiment distribution
+    model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
+    tokenizer = BertTokenizer.from_pretrained(model_name)
+    model = BertForSequenceClassification.from_pretrained(model_name)
+
 The sentiment analysis has been done using Bert. Its interest for this analysis is on the fact that it shows the positive, negative or neutral connotations attached to the U.S.A-China relations by article. As such, it might help in the understanding of general trends and evolutions through the different presidential terms.
 
 > [The code used to do the sentiment analysis can be found in the document _Sentiment analysis_Bert.ipynb_](https://github.com/jancipar/US-China-relations/blob/main/Sentiment_analysis_Bert.ipynb "Sentiment_analysis_Bert.ipynb")
@@ -174,10 +178,17 @@ The first sentiment analysis realised covers the entirety of the corpus, from 20
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_sentiment_analysis_1.jpg)
 _Figure: created by us. Overall sentiment analysis from 2009 to 2020._
 
+### Sentiment analysis per year
+    sentiment_percentages.plot(kind='bar', stacked=True, figsize=(10, 6))
+    plt.xlabel('Year')
+    plt.ylabel('Percentage')
+    plt.title('Sentiment Analysis by Year')
+    plt.legend(title='Sentiment', bbox_to_anchor=(1, 1), loc='upper left')
 
 In accordance with the first sentiment analysis, the second and more detailed one shows that the predominance of negative articles over the positive ones can be observed over the whole period 2009-2021. However, we can observe a significant increase of negative articles from the year 2016 which coincides with the onset of Trump's presidency. While the proportion of negative articles was around or below 40 % from 2009 to 2015, it was steadily over 40 % from 2016, reaching 66,7 % in 2021. We can also observe a decline in the share of positive and neutral articles. While from 2009 to 2016 the proportion of positive articles was around 12 %, it was mostly below 10 % from 2016. From 2009 to 2016, the share of neutral articles was around 50 %, but there is a stark decline from 2016. The analysis shows that the news coverage was mostly negative, especially since the beginning of Trump's presidency, when relations between the US and China deteriorated significantly.
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_sentiment_analysis_2.jpg)
-_Figure: created by us. Sentiment analysis by year from 2009 to 2020._
+_Figure: created by us. Sentiment analysis by year from 2009 to 2020._   
+
 
 ## Bibliography
 Carafano, J. (2023) Winning the New Cold War: A Plan for Countering China | The Heritage Foundation. Available at: https://www.heritage.org/asia/report/winning-the-new-cold-war-plan-countering-china (Accessed: 28 November 2023).  
