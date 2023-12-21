@@ -114,7 +114,7 @@ Suprisingly, the adjective "Korean" is also among the most frequent adjectives w
 
 The ten most common nouns include words such as "government", "officials" and "administration". This underscores the __pivotal role of state institutions__ in mutual relations. Even though we found several non-official actors in our NER analysis, both NER analysis and lexical extraction analysis prove the dominance of governments and governmental officials in US-China relations. Words __"trade" and "war" are also among the ten most common nouns__ which is consistent with the main dynamics of US-China relations in the literature.  
 
-> [The code used for this section is available in the document _Lexical extraction.ipynb_]([https://github.com/jancipar/US-China-relations/blob/main/Lexical%20extraction.ipynb] "Lexical extraction.ipynb")
+> [The code used for this section is available in the document _Lexical extraction.ipynb_](https://github.com/jancipar/US-China-relations/blob/main/Lexical%20extraction.ipynb "Lexical extraction.ipynb")
 
 
 
