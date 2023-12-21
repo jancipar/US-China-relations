@@ -143,7 +143,7 @@ Topic modeling has been realised on both the corpus encompassing all the article
 > [The lists will all the assigned topics for the three corpuses are available in the document _Topic modeling - tables with identified topics.pdf_](https://github.com/jancipar/US-China-relations/blob/main/Topic%20modelling.pdf "Topic modeling - tables with identified topics.pdf")
 
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_all_corpus.jpg)
-_Figure: created by us. Topic modelling applied to all articles from 2009 to 2021._
+_Figure 2: created by us. Topic modelling applied to all articles from 2009 to 2021._
 
 
 __Several key topics__ appeared in all or most of the topic modellings:
@@ -156,17 +156,17 @@ While we cannot exactly see a swift between security to finance topic in between
 
 ### Analysis of topic modeling by term
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_1.jpg)
-_Figure: created by us. Topic modelling applied to Obama's first term from 2009 to 2013._
+_Figure 3: created by us. Topic modelling applied to Obama's first term from 2009 to 2013._
 
-In this first figure, representing the 15 main topic's of __*Obama's first term (2009-2013)*__, we see that there is almost an overalapping between topic related with international relations and politics (numbers 1, 3, 12 and 14 of the graphic). Climate change (number 15) is perhaps the most encompassing topic after U.S.'s economy (number 12). A curious topic, for it is well define and separate from others is that of Iran and nuclear weapons (number 9).
+In Figure 3, representing the 15 main topic's of __*Obama's first term (2009-2013)*__, we see that there is almost an overalapping between topic related with international relations and politics (numbers 1, 3, 12 and 14 of the graphic). Climate change (number 15) is perhaps the most encompassing topic after U.S.'s economy (number 12). A curious topic, for it is well define and separate from others is that of Iran and nuclear weapons (number 9).
 
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Obama_2.jpg)
-_Figure: created by us. Topic modelling applied to Obama's second term from 2013 to 2017._
+_Figure 4: created by us. Topic modelling applied to Obama's second term from 2013 to 2017._
 
-In this figure representing __*Obama's second term (2013-2017)*__, we see many overlappings at the bottom, with little apparent thematic coherency. Climate change (number 8), besides being more closely related to China, is also quite broad. Perhaps the most interesting topics are those of Russia-related security issues (numbers 5 and 14), since they appear to be linked with Taiwan. We also see the appearence of the first topic exclusively related to finance (number 13).
+In Figure 4 representing __*Obama's second term (2013-2017)*__, we see many overlappings at the bottom, with little apparent thematic coherency. Climate change (number 8), besides being more closely related to China, is also quite broad. Perhaps the most interesting topics are those of Russia-related security issues (numbers 5 and 14), since they appear to be linked with Taiwan. We also see the appearence of the first topic exclusively related to finance (number 13).
 
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_topic_modelling_Trump.jpg)
-_Figure: created by us. Topic modelling applied to Trump's term from 2017 to 2021._
+_Figure 5: created by us. Topic modelling applied to Trump's term from 2017 to 2021._
 
 Finally, __*Trump's term (2017-2021)*__ is difficult to read, for number 3 greatly disrupts its configuration. This topic seems to be a mix of click-bait articles and White House day-to-day procedures. Climate change's extension (number 10) has been reduced, to the advantage of topic focussing more on domestic matters (number 6 on White House's security policies and number 14 on Biden and the election): this shift perhaps shows an increased importance given to domestic matters by the New York Times, or also a further consideraton of China within U.S.'s politics. Iran and nuclear weapons (number 5) is also present, as well as finance (number 7) and even a distinct topic on North Korea (number 12).
 
@@ -197,7 +197,7 @@ The sentiment analysis has been done using Bert. Its interest for this analysis 
 The first sentiment analysis realised covers the entirety of the corpus, from 2009 to 2020 (see Figure below). It shows that __46,26 % of all articles were negative, 10,9% positive and 42,84 % neutral__. These results came as unsuprising to us: during the covered period, both the tense U.S.-China relation and China's politics have not been presented under a flattening light to the U.S. public. The high percentage of neutral articles may depict the technical character of their relations on some subjects, but also The New York Times' unsensational approach to most topics.
 
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_sentiment_analysis_1.jpg)
-_Figure: created by us. Overall sentiment analysis from 2009 to 2020._
+_Figure 6: created by us. Overall sentiment analysis from 2009 to 2020._
 
 ### Sentiment analysis per year
     sentiment_percentages.plot(kind='bar', stacked=True, figsize=(10, 6))
@@ -209,7 +209,7 @@ _Figure: created by us. Overall sentiment analysis from 2009 to 2020._
 In accordance with the first sentiment analysis, the second and more detailed one shows that the predominance of negative articles over the positive ones can be observed over the whole period 2009-2020. However, we can observe a __significant increase of negative articles from the year 2016__ which coincides with the onset of Trump's presidency. While the proportion of negative articles was around or below 40 % from 2009 to 2015, it was steadily over 40 % from 2016, reaching 66,7 % in 2021. We can also observe a decline in the share of positive and neutral articles. While from 2009 to 2016 the proportion of positive articles was around 12 %, it was mostly below 10 % from 2016. From 2009 to 2016, the share of neutral articles was around 50 %, but there is a stark decline from 2016. The analysis shows that the news coverage was mostly negative, especially since the beginning of Trump's presidency, when relations between the US and China deteriorated significantly.
 
 ![Image](https://github.com/jancipar/US-China-relations/blob/main/Image_sentiment_analysis_2.jpg)
-_Figure: created by us. Sentiment analysis by year from 2009 to 2020._   
+_Figure 7: created by us. Sentiment analysis by year from 2009 to 2020._   
  
 
 ## Bibliography
